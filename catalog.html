@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-	<header class="main-header">
-		<div class="container">
+	<header class="main-header" >
+            <div class="container clearfix">
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -16,7 +17,7 @@
 							<a href="#">Фото и видео</a>
 						</li>
 						<li>
-							<img src="img/header-logo.png" width="100" height="50" alt="Sedona">
+							<img src="img/header-logo.png" width="100" height="15" alt="Sedona">
 						</li>
 						<li>
 							<a href="#">Карта штата</a>
@@ -28,16 +29,15 @@
 				</nav>
 		</div>		
 	</header>
-	<img src="img/background.jpg" width="1000" height="500" alt="Фоновая картинка">
-	<section class="search-menu">
-		<div class="top-search-menu">
+	<div class="search-menu">
+		<div class="top-search-menu clearfix">
 			<div class="infrastructure">
 				<p>Инфраструктура: </p>
 				<form>
 					<input type="checkbox" checked>
-					<label>Бассейн</label>
+					<label>Бассейн</label><br>
 					<input type="checkbox">
-					<label>Парковка</label>
+					<label>Парковка</label><br>
 					<input type="checkbox">
 					<label>Wi-Fi</label>
 				</form>
@@ -46,9 +46,9 @@
 				<p>Тип жилья: </p>
 				<form>
 					<input type="checkbox">
-					<label>Гостиница</label>
+					<label>Гостиница</label><br>
 					<input type="checkbox">
-					<label>Мотель</label>
+					<label>Мотель</label><br>
 					<input type="checkbox">
 					<label>Апартменты</label>
 				</form>
@@ -64,67 +64,136 @@
 		</div>
 		<div class="searching-results">
 			<div class="searching-results-top">
-				<p>Найдено: 3</p>
-				<p>Сортировка: </p>
-				<ul>
-					<li>По цене</li>
-					<li>По типу</li>
-					<li>По рейтингу</li>
-				</ul>
+				<div class="searching-results-top-answer">	
+					<p>Найдено: 3</p>
+				</div>
+				<div class="searching-results-top-sort">		
+					<p>Сортировка: </p>
+				</div>	
+					<ul class="searching-results-top-sort-choice">
+						<li>По цене</li>
+						<li>По типу</li>
+						<li>По рейтингу</li>
+					</ul>
 			</div>
 			<div class="searching-results-content">
 				<ul>
-					<li>
-						<img src="img/Amara-resort.png" alt="Amara Resort & Spa">
-						<p>Amara Resort & Spa</p>
-						<p>Гостиница</p>
-						<p>От 3500 р.</p>
-						<p>Рейтинг: 8,5</p>
-						<form>
-							<input type="submit" value="Подробнее">
-						</form>
-						<a href="#">Забронировать</a>
-					</li>
-					<li>
-						<img src="img/desert-quail-inn.png" alt="Desert Quail Inn">
-						<p>Desert Quail Inn</p>
-						<p>Мотель</p>
-						<p>От 2000 р.</p>
-						<p>Рейтинг: 8,9</p>
-						<form>
-							<input type="submit" value="Подробнее">
-						</form>
-						<a href="#">Забронировать</a>
-					</li>
-					<li>
-						<img src="img/villas-at-poco.png" alt="Villas at Poco Diablo">
-						<p>Villas at Poco Diablo</p>
-						<p>Апартменты</p>
-						<p>От 4000 р.</p>
-						<p>Рейтинг: 9,2</p>
-						<form>
-							<input type="submit" value="Подробнее">
-						</form>
-						<a href="#">Забронировать</a>
-					</li>
+					<div class="searching-results-content-var clearfix">
+						<li>
+							<div class="searching-results-content-var-image">
+								<img src="img/Amara-resort.png" alt="Amara Resort & Spa">
+							</div>
+							<div class="searching-results-content-var-description clearfix">
+								<div class="searching-results-content-var-description-name">
+									<p>Amara Resort & Spa</p>
+								</div>
+								<div class="searching-results-content-var-description-type-habitation">	
+									<p>Гостиница</p>
+								</div>
+								<div class="searching-results-content-var-description-cost">	
+									<p>От 4000 р.</p>
+								</div>
+								<div class="searching-results-content-var-description-submit">	
+									<form>
+										<input type="submit" value="Подробнее">
+									</form>
+								</div>
+								<div class="searching-results-content-var-description-link">		
+									<a href="#">Забронировать</a>
+								</div>	
+							</div>
+							<div class="searching-results-content-var-rate">
+								<p>Рейтинг: 8,5</p>
+							</div>	
+						</li>
+					</div>	
+					<div class="searching-results-content-var clearfix">
+						<li>
+							<div class="searching-results-content-var-image">
+								<img src="img/desert-quail-inn.png" alt="Desert Quail Inn">
+							</div>
+							<div class="searching-results-content-var-description clearfix">
+								<div class="searching-results-content-var-description-name">
+									<p>Desert Quail Inn</p>
+								</div>
+								<div class="searching-results-content-var-description-type-habitation">	
+									<p>Мотель</p>
+								</div>
+								<div class="searching-results-content-var-description-cost">	
+									<p>От 2000 р.</p>
+								</div>
+								<div class="searching-results-content-var-description-submit">
+									<form>
+										<input type="submit" value="Подробнее">
+									</form>
+								</div>
+								<div class="searching-results-content-var-description-link">
+									<a href="#">Забронировать</a>
+								</div>
+								<div class="searching-results-content-var-rate">
+									<p>Рейтинг: 8,9</p>
+								</div>	
+							</div>	
+						</li>
+					</div>
+					<div class="searching-results-content-var clearfix">	
+						<li>
+							<div class="searching-results-content-var-image">
+								<img src="img/villas-at-poco.png" alt="Villas at Poco Diablo">
+							</div>
+							<div class="searching-results-content-var-description clearfix">	
+								<div class="searching-results-content-var-description-name">	
+									<p>Villas at Poco Diablo</p>
+								</div>
+								<div class="searching-results-content-var-description-type-habitation">	
+									<p>Апартменты</p>
+								</div>
+								<div class="searching-results-content-var-description-cost">	
+									<p>От 4000 р.</p>
+								</div>	
+								<div class="searching-results-content-var-description-submit">	
+									<form>
+										<input type="submit" value="Подробнее">
+									</form>
+								</div>
+								<div class="searching-results-content-var-description-link">
+									<a href="#">Забронировать</a>
+								</div>
+								<div class="searching-results-content-var-rate">
+									<p>Рейтинг: 9,2</p>
+								</div>	
+							</div>	
+							
+						</li>
+					</div>	
 				</ul>
 			</div>
 		</div>
-	</section>
-	<footer>
+	</div>
+	<footer class="footer clearfix">
 		<div class="footer-item">
 			<p>#visitsedona</p>
 		</div>
-				<div class="social">
-			<a href="#"><img src="img/t.png" width="15" height="15" alt="Twitter"></a>
-			<a href="#"><img src="img/f.png" width="15" height="15" alt="Facebook"></a>
-			<a href="#"><img src="img/y.png" width="15" height="15" alt="YouTube"></a>
+		<div class="social clearfix">
+			<div class="social-twitter">
+				<a href="#"><img src="img/t.png" width="20" height="16" alt="Twitter"></a>
+			</div>
+			<div class="social-facebook>
+				<a href="#"><img src="img/f.png" width="20" height="16" alt="Facebook"></a>
+			</div>
+			<div class="social-youtube>
+				<a href="#"><img src="img/y.png" width="20" height="16" alt="YouTube"></a>
+			</div>	
 		</div>
-		<div class="website">
-			<p>website by</p>
-			<a href="#">
-				<img src="img/html-academy.png" width="100" height="33" alt="HTML Academy">
-			</a>	
+		<div class="website clearfix">
+			<div class="website-description">
+				<p>website by</p>
+			</div>
+			<div class="website-link">
+				<a href="#">
+					<img src="img/html-academy.png" width="100" height="33" alt="HTML Academy">
+				</a>
+			</div>	
 		</div>
 	</footer>
 	</body>
