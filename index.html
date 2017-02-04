@@ -7,7 +7,7 @@
   </head>
   <body>
 	<header class="main-header" >
-            <div class="container">
+            <div class="container clearfix">
 				<nav class="main-navigation">
 					<ul>
 						<li>
@@ -17,7 +17,7 @@
 							<a href="#">Фото и видео</a>
 						</li>
 						<li>
-							<img src="img/header-logo.png" width="100" height="50" alt="Sedona">
+							<img src="img/header-logo.png" width="100" height="15" alt="Sedona">
 						</li>
 						<li>
 							<a href="#">Карта штата</a>
@@ -30,20 +30,28 @@
 		</div>		
 	</header>
 	<main class="container">
-		<section class="welcome">
-			<img src="img/welcome.png" width="300" height="200" alt="Welcome to the gorgeous Sedona">
-			<img src="img/background-photo.jpg" width="600" height="400" alt="Вид с горами">
-		</section>
-		<section class="features">
-			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-			<p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-			<div class="features-first-reason">
-				<p>Настоящий городок</p>
-				<p>- №1 -</p>
-				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-				<img src="img/true-town.png" width="600" height="200" alt="Настоящий городок">
+		<div class="welcome">
+			<div class="welcome-text">
+				<img src="img/background-photo.jpg" width="1200" height="720" alt="Вид с горами" >
+				<img src="img/welcome.png" width="480" height="380" alt="Welcome to the gorgeous Sedona"class="top">
 			</div>
-			<div class="features-presentation">
+		</div>
+		<div class="features">
+			<div class="features-introduction">
+				<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>	
+			<div class="features-first-reason clearfix">
+				<div class="features-first-reason-description">
+					<p>Настоящий городок</p>
+					<p>- №1 -</p>
+					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="features-first-reason-image">		
+					<img src="img/true-town.png" width="790" height="260" alt="Настоящий городок">
+				</div>
+			</div>
+			<div class="features-presentation clearfix">
 				<div class="habitation">
 					<img src="img/house.png" width="50" height="50" alt="Жилье">
 					<p>Жилье</p>
@@ -60,13 +68,17 @@
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
-			<div class="features-second-reason">
-				<p>Там есть мост дьявола</p>
-				<p>- №2 -</p>
-				<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
-				<img src="img/devil-bridge.png" width="600" height="200" alt="Мост дьявола">
+			<div class="features-second-reason clearfix">
+				<div class="features-second-reason-image">
+					<img src="img/devil-bridge.png" width="800" height="260" alt="Мост дьявола">
+				</div>	
+				<div class="features-second-reason-description">
+					<p>Там есть мост дьявола</p>
+					<p>- №2 -</p>
+					<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+				</div>
 			</div>
-			<div class="features-three-causes">
+			<div class="features-three-causes clearfix">
 				<div class="features-third-reason">
 					<p>Небольшая площадь</p>
 					<p>- №3 -</p>
@@ -84,38 +96,71 @@
 				</div>
 			</div>
 			<div class="features-search-hotel">
-				<p>Заинтересовались?</p>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<div class="blank-search-hotel">
-					<p>Поиск гостиницы в Седоне</p>
-					<img src="img/map.png" width="1200" height="500" alt="Карта">
+				<div class="features-search-hotel-description">
+					<p>Заинтересовались?</p>
+					<div class="features-search-hotel-description-content">
+						<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					</div>
+					<div class="features-search-hotel-description-top">		
+						<p>Поиск гостиницы в Седоне</p>
+					</div>
+				</div>
+				<div class="blank-search-hotel clearfix">	
 					<form>
-						<p>Дата заезда: 
-							<input type="date">
-						</p>
-						<p>Дата выезда: 
-							<input type="date">
-						</p>
-						<p>Взрослые:
-							<input type="number" value="2">
-						</p>
-						<p>Дети:
-							<input type="number" value="0">
-						</p>
-						<input type="submit" value="Найти">
+						<div class="blank-search-hotel-date clearfix">
+								<div class="blank-search-hotel-date-description">
+									Дата заезда:
+								</div>			
+								<div class="blank-search-hotel-calendar">		
+									<input type="date">
+								</div>
+							
+						</div>
+						<div class="blank-search-hotel-date clearfix">						
+								<div class="blank-search-hotel-date-description">
+									Дата выезда:
+								</div>			
+								<div class="blank-search-hotel-calendar">		
+									<input type="date">
+								</div>
+						</div>
+						<div class="blank-number clearfix">
+							<div class="blank-number-adult">
+								Взрослые:
+							</div>
+							<div class="blank-number-adult-value">
+								<input type="number" value="2">
+							</div>	
+							<div class="blank-number-child">
+								Дети:
+							</div>
+							<div class="blank-number-child-value">
+								<input type="number" value="0">
+							</div>	
+						</div>
+						<div class="blank-search-hotel-submit">
+							<input type="submit" value="Найти">
+						</div>
 					</form>
 				</div>
+				<img src="img/map.png" width="1200" height="500" alt="Карта">
 			</div>	
-		</section>
+		</div>
 	</main>
-	<footer>
+	<footer class="footer clearfix">
 		<div class="footer-item">
 			<p>#visitsedona</p>
 		</div>
-		<div class="social">
-			<a href="#"><img src="img/t.png" width="15" height="15" alt="Twitter"></a>
-			<a href="#"><img src="img/f.png" width="15" height="15" alt="Facebook"></a>
-			<a href="#"><img src="img/y.png" width="15" height="15" alt="YouTube"></a>
+		<div class="social clearfix">
+			<div class="social-t">
+				<a href="#"><img src="img/t.png" width="20" height="16" alt="Twitter"></a>
+			</div>
+			<div class="social-f>
+				<a href="#"><img src="img/f.png" width="20" height="16" alt="Facebook"></a>
+			</div>
+			<div class="social-i>
+				<a href="#"><img src="img/y.png" width="20" height="16" alt="YouTube"></a>
+			</div>	
 		</div>
 		<div class="website">
 			<p>website by</p>

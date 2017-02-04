@@ -6,8 +6,6 @@ body	{
   text-transform: uppercase;
   line-height: 1.857;
 }
-
-
 p	{
   font-size: 14px;
   font-family: "PT Sans";
@@ -23,4 +21,286 @@ h2	{
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.238;
+}
+
+/*	HEADER	*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header	{
+	min-height: 60px;
+}
+.container	{
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.main-navigation	{
+	min-height: 60px;
+	width: 1200px;
+	margin: 0 auto;
+}
+.main-navigation ul li	{
+	width: 220px;
+	display: inline-block;
+	text-align: center;
+/*	padding-top: 16px; 
+	padding-bottom: 16px; 
+*/	
+}
+
+/*	CONTAINER	*/
+
+.welcome	{
+	display: inline-block;
+	margin-left: 310px;
+}
+.welcome-text	{
+	position: relative;
+}
+.welcome-text .top	{
+	position: absolute;
+	top: 15px;
+	left: 360px;
+}
+
+
+.features-introduction	{
+	width: 560px;
+	min-height: 60px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.features-first-reason	{
+	margin: 0 auto;
+	width: 1200px;
+	min-height: 260px;
+	margin-bottom: 50px;
+}
+.features-first-reason-description	{
+	float: left;
+	width: 400px;
+	min-height: 260px;
+	text-align: center;
+	background: #81b3d2;
+}
+.features-first-reason-image	{
+	float: right;
+	width: 800px;
+	min-height: 260px;
+	margin-left: 0px;
+}
+.features-first-reason p	{
+	color: white;
+}
+
+
+.features-presentation	{
+	margin: 0 auto;
+	width: 1200px;
+}
+.features-presentation .habitation	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+.features-presentation .food	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+.features-presentation .souvenirs	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+
+
+.features-second-reason	{
+	margin: 0 auto;
+	width: 1200px;
+	margin-bottom: 0;
+}
+.features-second-reason-image	{
+	float: left;
+	width: 800px;
+	min-height: 260px;
+}
+.features-second-reason-description	{
+	float: right;
+	width: 400px;
+	min-height: 260px;
+	text-align: center;
+	margin-right: 0px;
+	background: #81b3d2;
+}
+.features-second-reason-description p	{
+	color: white;
+}
+
+
+.features-three-causes	{
+	margin: 0 auto;
+	width: 1200px;
+	background: #eeeeee;
+	margin-top: 0;
+}
+.features-third-reason	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+.features-fourth-reason	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+.features-fifth-reason	{
+	float: left;
+	width: 290px;
+	min-height: 220px;
+	text-align: center;
+	margin-left: 82px;
+}
+
+
+.features-search-hotel	{
+	width: 1200px;
+	min-height: 765px;
+	margin: 0 auto;
+}
+.features-search-hotel-description	{
+	float: left;
+	width: 1200px;
+	min-height: 290px;
+	text-align: center;
+}
+.features-search-hotel-description-content	{
+	width: 460px;
+	min-height: 60px;
+	margin: 0 auto;
+}
+.features-search-hotel-description-top	{
+	width: 570px;
+	min-height: 18px;
+	margin: 0 auto;
+	background: #766357;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+.features-search-hotel-description-top p	{
+	color: white;
+}
+.blank-search-hotel	{
+	width: 568px;
+	min-height: 395px;
+	margin: 0 auto;
+}
+.blank-search-hotel-date	{
+	width: 460px;
+	min-height: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.blank-search-hotel-date-description	{
+	float: left;
+}
+.blank-search-hotel-calendar	{
+	float: right;
+	width: 346px;
+	min-height: 38px;
+	background: #f2f2f2;
+}
+
+.blank-number	{
+	width: 460px;
+	min-height: 50px;
+	margin: 0 auto;
+}
+.blank-number-adult	{
+	float: left;
+	width: 110px;
+	min-height: 38px;
+}
+.blank-number-adult-value	{
+	float: left;
+	width: 60px;
+	min-height: 38px;
+}
+.blank-number-child	{
+	float: left;
+	width: 110px;
+	min-height: 38px;
+}
+.blank-number-child-value	{
+	float: left;
+	width: 60px;
+	min-height: 38px;
+}
+
+.blank-search-hotel-submit	{
+	width: 458px;
+	min-height: 58px;
+	margin: 0 auto;
+}
+
+
+/*	FOOTER	*/
+
+.footer	{
+	width: 1200px;
+	min-height: 120px;
+	margin: 0 auto;
+}
+
+.footer-item	{
+	float: left;
+	width: 160px;
+	min-height: 30px;
+	margin: 0 auto;
+	margin-left: 130px;
+	margin-right: 250px;
+}
+.social	{
+	float: left;
+	width: 190px;
+	min-height: 48px;
+	margin: 0 auto;
+	margin-right: 220px;
+}
+.social-t	{
+	float: right;
+	width: 30px;
+	min-height: 30px;
+	background: #81b3d2;
+	margin-right: 6px;
+	border: 1px solid blue;
+}
+.social-f	{
+	float: right;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+	margin-right: 6px;
+	border: 1px solid blue;
+}
+.social-i	{
+	float: right;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+	border: 1px solid blue;
 }
