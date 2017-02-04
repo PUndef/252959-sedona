@@ -264,6 +264,7 @@ h2	{
 	width: 1200px;
 	min-height: 120px;
 	margin: 0 auto;
+	border: 1px solid blue;
 }
 
 .footer-item	{
@@ -273,34 +274,56 @@ h2	{
 	margin: 0 auto;
 	margin-left: 130px;
 	margin-right: 250px;
+	margin-top: 30px;
+	text-align: center;
+	border: 1px solid blue;
 }
 .social	{
 	float: left;
-	width: 190px;
+	width: 162px;
 	min-height: 48px;
-	margin: 0 auto;
-	margin-right: 220px;
-}
-.social-t	{
-	float: right;
-	width: 30px;
-	min-height: 30px;
-	background: #81b3d2;
-	margin-right: 6px;
+	margin-right: 100px;
+	margin-top: 30px;
 	border: 1px solid blue;
 }
-.social-f	{
-	float: right;
+.social-twitter	{
+	float: left;
 	width: 46px;
 	min-height: 48px;
 	background: #81b3d2;
 	margin-right: 6px;
 	border: 1px solid blue;
 }
-.social-i	{
-	float: right;
+.social-facebook	{
+	float: left;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+	margin-right: 6px;
+	border: 1px solid blue;
+}
+.social-youtube	{
+	float: left;
 	width: 46px;
 	min-height: 48px;
 	background: #81b3d2;
 	border: 1px solid blue;
+}
+
+.website	{
+	float: right;
+	width: 255px;
+	min-height: 50px;
+	margin-top: 30px;
+}
+.website-description	{
+	float: left;
+	width: 110px;
+	min-height: 18px;
+	text-align: center;
+}
+.website-link	{
+	float: left;
+	width: 113px;
+	min-height: 39px;
 }
