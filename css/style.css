@@ -51,6 +51,70 @@ h2	{
 */	
 }
 
+
+				/*	FOOTER	*/
+
+.footer	{
+	width: 1200px;
+	min-height: 120px;
+	margin: 0 auto;
+}
+
+.footer-item	{
+	float: left;
+	width: 160px;
+	min-height: 30px;
+	margin: 0 auto;
+	margin-left: 130px;
+	margin-right: 250px;
+	margin-top: 30px;
+	text-align: center;
+}
+.social	{
+	float: left;
+	width: 162px;
+	min-height: 48px;
+	margin-right: 100px;
+	margin-top: 30px;
+}
+.social-twitter	{
+	float: left;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+	margin-right: 6px;
+}
+.social-facebook	{
+	float: left;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+	margin-right: 6px;
+}
+.social-youtube	{
+	float: left;
+	width: 46px;
+	min-height: 48px;
+	background: #81b3d2;
+}
+
+.website	{
+	float: right;
+	width: 255px;
+	min-height: 50px;
+	margin-top: 30px;
+}
+.website-description	{
+	float: left;
+	width: 110px;
+	min-height: 18px;
+	text-align: center;
+}
+.website-link	{
+	float: left;
+	width: 113px;
+	min-height: 39px;
+}
 				/*	INDEX	*/
 				/*	CONTAINER	*/
 
@@ -258,71 +322,6 @@ h2	{
 	margin: 0 auto;
 }
 
-
-				/*	FOOTER	*/
-
-.footer	{
-	width: 1200px;
-	min-height: 120px;
-	margin: 0 auto;
-}
-
-.footer-item	{
-	float: left;
-	width: 160px;
-	min-height: 30px;
-	margin: 0 auto;
-	margin-left: 130px;
-	margin-right: 250px;
-	margin-top: 30px;
-	text-align: center;
-}
-.social	{
-	float: left;
-	width: 162px;
-	min-height: 48px;
-	margin-right: 100px;
-	margin-top: 30px;
-}
-.social-twitter	{
-	float: left;
-	width: 46px;
-	min-height: 48px;
-	background: #81b3d2;
-	margin-right: 6px;
-}
-.social-facebook	{
-	float: left;
-	width: 46px;
-	min-height: 48px;
-	background: #81b3d2;
-	margin-right: 6px;
-}
-.social-youtube	{
-	float: left;
-	width: 46px;
-	min-height: 48px;
-	background: #81b3d2;
-}
-
-.website	{
-	float: right;
-	width: 255px;
-	min-height: 50px;
-	margin-top: 30px;
-}
-.website-description	{
-	float: left;
-	width: 110px;
-	min-height: 18px;
-	text-align: center;
-}
-.website-link	{
-	float: left;
-	width: 113px;
-	min-height: 39px;
-}
-
 			/*		CATALOG		*/
 
 .top-search-menu	{
@@ -381,7 +380,7 @@ h2	{
 	min-height: 13px;
 	margin-right: 87px;
 }
-.searching-results-top-sort-choice	li	{
+.searching-results-top-sort-choice	p	{
 	float: left;
 	width: 80px;
 	min-height: 13px;
