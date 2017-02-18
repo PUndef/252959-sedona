@@ -1,6 +1,6 @@
 body {
     font-size: 14px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
@@ -9,7 +9,7 @@ body {
 
 p {
     font-size: 14px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
@@ -18,7 +18,7 @@ p {
 
 h2 {
     font-size: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
     text-transform: uppercase;
@@ -65,7 +65,7 @@ h2 {
 .main-navigation ul li a {
     font-size: 14px;
     color: black;
-    font-family: "PT Sans";
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
 .logo {
@@ -265,7 +265,7 @@ h2 {
 .welcome-introduction h2 {
     font-size: 21px;
     font-weight: bold;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     padding-top: 64px;
     padding-left: 300px;
     padding-right: 310px;
@@ -448,7 +448,7 @@ input[type=date] {
     border: none;
     padding-left: 10px;
     font-size: 16px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bolder;
     background-image: url(/img/calendar.png);
     background-repeat: no-repeat;
@@ -481,7 +481,7 @@ input[type=date]:active {
     margin-bottom: 55px;
     background: #81b3d2;
     color: white;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 21px;
     font-weight: bold;
     text-transform: uppercase;
@@ -635,7 +635,7 @@ input[type='range']::-webkit-slider-thumb:hover {
     margin-top: 32px;
     color: white;
     background: none;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     border: 2px solid white;
@@ -688,7 +688,7 @@ input[type='range']::-webkit-slider-thumb:hover {
     margin-top: 14px;
     margin-left: 355px;
     list-style: none;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
 }
 
 .sort-menu li {
@@ -965,7 +965,7 @@ s .col_1 {
     height: 27px;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bold;
     color: white;
     background: #81b3d2;
@@ -981,7 +981,7 @@ s .col_1 {
 .result-item-link a {
     font-size: 14px;
     text-transform: uppercase;
-    font-family: 'PT Sans';
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bold;
     color: white;
     padding-left: 18px;
