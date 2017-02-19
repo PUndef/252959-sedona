@@ -34,9 +34,9 @@
         </nav>
     </header>
     <section class="top-search-menu">
-        <div class="top-item-menu">
-            <p>Инфраструктура: </p>
-            <form>
+        <form>
+            <div class="top-item-menu">
+                <p>Инфраструктура: </p>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox"><span>Бассейн</span>
@@ -52,11 +52,9 @@
                         <input type="checkbox"><span>Wi-Fi</span>
                     </label>
                 </div>
-            </form>
-        </div>
-        <div class="top-item-menu">
-            <p>Тип жилья: </p>
-            <form>
+            </div>
+            <div class="top-item-menu">
+                <p>Тип жилья: </p>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox"><span>Гостиница</span>
@@ -72,21 +70,29 @@
                         <input type="checkbox"><span>Апартаменты</span>
                     </label>
                 </div>
-            </form>
-        </div>
-        <div class="cost">
-            <p>Стоимость в сутки (р): </p>
-            <div class="cost-range">
-                <div class="grid">
-                    <p class="col col_2">От 0</p>
-                    <p class="col col_2">До 30000</p>
-                </div>
             </div>
-            <form>
-                <input type="range" min="0" max="30000" step="1000" value="1000">
-                <input class="cost-range-submit" type="submit" value="Показать">
-            </form>
-        </div>
+            <div class="cost">
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label class="min-price">от
+                            <input type="text" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">до
+                            <input type="text" name="max-price" value="3000">
+                        </label>
+                    </div>
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                </div>
+            </div>    
+        </form>
     </section>
     <section class="searching-results">
         <div class="searching-results-top">
@@ -102,11 +108,11 @@
                 <li>
                     <a href="#">По рейтингу</a>
                 </li>
-                <li>
+                <li class="up-button">
                     <a href="#">
                     </a>
                 </li>
-                <li class="active">
+                <li class="down-button active">
                     <a href="#">
                     </a>
                 </li>
@@ -161,7 +167,7 @@
                         </div>
                     </div>
                     <div class="rate col col_5">
-                         <ul class="star">
+                        <ul class="star">
                             <li></li>
                             <li></li>
                             <li></li>
@@ -189,7 +195,7 @@
                         </div>
                     </div>
                     <div class="rate col col_5">
-                         <ul class="star">
+                        <ul class="star">
                             <li></li>
                             <li></li>
                         </ul>
