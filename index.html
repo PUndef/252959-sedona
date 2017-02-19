@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
         <nav class="wrap main-navigation">
             <ul>
                 <li>
-                    <a href="#">Информация</a>
+                    <a href="/index.html">Информация</a>
                 </li>
                 <li>
                     <a href="#">Фото и видео</a>
@@ -28,7 +28,7 @@
                     <a href="#">Карта штата</a>
                 </li>
                 <li>
-                    <a href="#">Гостиницы</a>
+                    <a href="/catalog.html">Гостиницы</a>
                 </li>
             </ul>
         </nav>
@@ -47,12 +47,12 @@
         </section>
         <section class="wrap item-reason">
             <div class="grid">
-                <div class="col item-reason-description">
+                <div class="col col_3 item-reason-description">
                     <h2>Настоящий городок</h2>
                     <p>- №1 -</p>
                     <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <div class="col item-reason-image">
+                <div class="col col_6">
                     <img src="img/true-town.png" width="800" height="401" alt="Настоящий городок">
                 </div>
             </div>
@@ -92,17 +92,17 @@
             <div class="grid">
                 <div class="col col_3">
                     <h2>Небольшая площадь</h2>
-                    <span>- №3 -</span>
+                    <p>- №3 -</p>
                     <p>Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="col col_3">
                     <h2>Красивая дорога</h2>
-                    <span>- №4 -</span>
+                    <p>- №4 -</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="col col_3">
                     <h2>Мало туристов</h2>
-                    <b>- №5 -</b>
+                    <p>- №5 -</p>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
             </div>
@@ -135,20 +135,16 @@
                     <div class="blank-number">
                         <div class="grid">
                             <div class="col col_2">
-                                <span class="col col_2">Взрослые:</span>
-                                <div class="col col_3">
-                                    <button class="minus-button"></button>
-                                    <input class="col col_2" type="number" value="2">
-                                    <button class="plus-button"></button>
-                                </div>
+                                <span class="col col_4">Взрослые:</span>
+                                <img src="/img/minus.png" width="38" height="38" alt="-">
+                                <input class="col col_4" type="number" value="2">
+                                <img src="/img/plus.png" width="38" height="38" alt="+">
                             </div>
                             <div class="col col_2">
-                                <span class="col col_2">Дети:</span>
-                                <div class="col col_3">
-                                    <button class="minus-button"></button>
-                                    <input class="col col_2" type="number" value="2">
-                                    <button class="plus-button"></button>
-                                </div>
+                                <span class="col col_4">Дети:</span>
+                                <img src="/img/minus.png" width="38" height="38" alt="-">
+                                <input class="col col_4" type="number" value="2">
+                                <img src="/img/plus.png" width="38" height="38" alt="+">
                             </div>
                         </div>
                     </div>

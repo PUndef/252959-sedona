@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
         <nav class="wrap main-navigation">
             <ul>
                 <li>
-                    <a href="#">Информация</a>
+                    <a href="/index.html">Информация</a>
                 </li>
                 <li>
                     <a href="#">Фото и видео</a>
@@ -28,7 +28,7 @@
                     <a href="#">Карта штата</a>
                 </li>
                 <li>
-                    <a href="#">Гостиницы</a>
+                    <a class="active" href="/catalog.html">Гостиницы</a>
                 </li>
             </ul>
         </nav>
@@ -78,12 +78,8 @@
             <p>Стоимость в сутки (р): </p>
             <div class="cost-range">
                 <div class="grid">
-                    <div class="col col_2">
-                        <p>От 0</p>
-                    </div>
-                    <div class="col col_2">
-                        <p>До 30000</p>
-                    </div>
+                    <p class="col col_2">От 0</p>
+                    <p class="col col_2">До 30000</p>
                 </div>
             </div>
             <form>
