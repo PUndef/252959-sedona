@@ -33,7 +33,22 @@ h2 {
     text-transform: uppercase;
     line-height: 1.238;
 }
-
+a    {
+    font-size: 14px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.857;
+}
+span {
+    font-size: 14px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.857;
+}
 
 /*	HEADER	*/
 
@@ -78,7 +93,12 @@ h2 {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-decoration: none;
 }
-
+.main-navigation ul li a:hover{
+    color: #a3c7de;
+}
+.main-navigation ul li a:active{
+    color: #b2b2b2;
+}
 .logo {
     display: block;
     margin: 0 auto;
@@ -443,7 +463,12 @@ h2 {
     margin-bottom: 78px;
     background-color: white;
 }
-
+.modal-content    {
+    display: none;
+}
+.modal-content-show    {
+    display: block;
+}
 .blank-search-hotel-date {
     width: 515px;
     height: 45px;
@@ -988,7 +1013,7 @@ input[type=range]::-ms-thumb:hover {
     vertical-align: middle;
     width: 11px;
     height: 10px;
-    margin-left: 495px;
+    margin-left: 456px;
     background-image: url("../img/tr-up.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
