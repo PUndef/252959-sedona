@@ -5,6 +5,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.857;
+    overflow-x: hidden;
 }
 
 p {
@@ -33,14 +34,17 @@ h2 {
     text-transform: uppercase;
     line-height: 1.238;
 }
-a    {
+
+a {
     font-size: 14px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: rgb(51, 51, 51);
     font-weight: bold;
+    text-decoration: none;
     text-transform: uppercase;
     line-height: 1.857;
 }
+
 span {
     font-size: 14px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -49,6 +53,7 @@ span {
     text-transform: uppercase;
     line-height: 1.857;
 }
+
 
 /*	HEADER	*/
 
@@ -93,12 +98,15 @@ span {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-decoration: none;
 }
-.main-navigation ul li a:hover{
+
+.main-navigation ul li a:hover {
     color: #a3c7de;
 }
-.main-navigation ul li a:active{
+
+.main-navigation ul li a:active {
     color: #b2b2b2;
 }
+
 .logo {
     display: block;
     margin: 0 auto;
@@ -449,49 +457,88 @@ span {
     height: 86px;
 }
 
-.search-hotel-description-top a {
+.search_btn {
     display: block;
     padding-top: 25px;
     font-size: 21px;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .blank-search-hotel {
-    margin: 0 auto;
-    width: 568px;
+    position: relative;
+    left: 100%;
+    width: 570px;
     padding-top: 60px;
-    margin-bottom: 78px;
     background-color: white;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
 }
-.modal-content    {
-    display: none;
+
+.blank-search-hotel.open {
+    left: 50%;
+    margin-left: -285px;
 }
-.modal-content-show    {
-    display: block;
+
+.modal-content {
+    position: absolute;
+    /*right: -1500px;*/
+}
+
+.modal-content-show {
+    position: absolute;
+    right: 0;
     animation: bounce 0.6s;
 }
-.modal-error    {
+
+.modal-error {
     animation: shake 0.6s;
 }
-.map-window    {
+
+.map-window {
     display: block;
     z-index: 0;
 }
-.map-window-hide    {
+
+.map-window-hide {
     display: none;
 }
+
 @keyframes bounce {
-    0% { transform: translatex(700px);}
-    50% {transform: translateX(-20px)}
-    100%    { transform: translateY(0);}
+    0% {
+        transform: translatex(700px);
+    }
+    50% {
+        transform: translateX(-20px)
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
+
 @keyframes shake {
-    0%, 100%    {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90%    {transform: translateX(-10px);}
-    20%, 40%, 60%, 80%    {transform: translateX(10px);}
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
+
 .blank-search-hotel-date {
     width: 515px;
     height: 45px;
@@ -721,8 +768,6 @@ label {
     position: relative;
 }
 
-
-
 .checkbox input[type=checkbox] {
     display: none;
 }
@@ -753,6 +798,7 @@ input[type="checkbox"]:checked + span {
     margin-top: 29px;
     margin-right: 62px;
 }
+
 .filter-range {
     width: 320px;
     color: #ffffff;
@@ -872,6 +918,8 @@ input[type="checkbox"]:checked + span {
     color: #000000;
     background: #ffffff;
 }
+
+
 /*
 .cost p {
     padding-left: 2px;
@@ -952,6 +1000,7 @@ input[type=range]::-ms-thumb:hover {
     background-image: url("../img/slider-a.png");
 }
 */
+
 .cost-range-submit {
     width: 136px;
     height: 34px;
@@ -1139,18 +1188,13 @@ s .col_1 {
 }
 
 .blank-form {
+    position: relative;
+    overflow: hidden;
     width: 1200px;
     height: 475px;
     margin: 0 auto;
     background-color: antiquewhite;
     background-image: url("../img/map.png");
-}
-
-.blank-background {
-    position: absolute;
-    bottom: -1430px;
-    left: 40px;
-    z-index: 0;
 }
 
 .result-item {
@@ -1181,9 +1225,12 @@ s .col_1 {
     font-weight: normal;
 }
 
-.result-item-submit input {
+.result-item-submit a {
+    display: inline-block;
     width: 110px;
     height: 27px;
+    text-align: center;
+    vertical-align: middle;
     font-size: 14px;
     text-transform: uppercase;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -1200,11 +1247,11 @@ s .col_1 {
     border: none;
 }
 
-.result-item-submit input:hover {
+.result-item-submit a:hover {
     background: #669ec0;
 }
 
-.result-item-submit input:active {
+.result-item-submit a:active {
     background: #5496bd;
     color: #88b6d1;
 }
