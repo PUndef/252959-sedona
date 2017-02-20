@@ -119,6 +119,8 @@ span {
     min-height: 120px;
     padding-top: 10px;
     margin: 0 auto;
+    z-index: 10;
+    opacity: 1;
 }
 
 .footer-item {
@@ -468,6 +470,27 @@ span {
 }
 .modal-content-show    {
     display: block;
+    animation: bounce 0.6s;
+}
+.modal-error    {
+    animation: shake 0.6s;
+}
+.map-window    {
+    display: block;
+    z-index: 0;
+}
+.map-window-hide    {
+    display: none;
+}
+@keyframes bounce {
+    0% { transform: translatex(700px);}
+    50% {transform: translateX(-20px)}
+    100%    { transform: translateY(0);}
+}
+@keyframes shake {
+    0%, 100%    {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90%    {transform: translateX(-10px);}
+    20%, 40%, 60%, 80%    {transform: translateX(10px);}
 }
 .blank-search-hotel-date {
     width: 515px;
@@ -533,6 +556,7 @@ input[type=date]:active {
     vertical-align: center;
     font-size: 14px;
     font-weight: bold;
+    color: black;
     width: 90px;
     padding-left: 5px;
     padding-top: 6px;
